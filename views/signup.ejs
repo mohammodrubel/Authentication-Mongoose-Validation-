@@ -1,0 +1,22 @@
+<%- include('common/header'); -%>
+    <h1>Register</h1>
+    <form method="POST" action="/signup" style="max-width: 400px; margin: 0 auto;">
+        <div style="margin-bottom: 10px;">
+            <label for="username" style="display: block;">Username:</label>
+            <input type="text" id="username" name="name" style="width: 100%; padding: 5px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="email" style="display: block;">Email:</label>
+            <input type="email" id="email" name="email" style="width: 100%; padding: 5px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+            <label for="password" style="display: block;">Password:</label>
+            <input type="password" id="password" name="password" style="width: 100%; padding: 5px;">
+        </div>
+        <div style="text-align: center;">
+            <button type="submit"
+                style="padding: 10px 20px; background-color: #007bff; color: #fff; border: none; cursor: pointer;">Register</button>
+        </div>
+    </form>
+
+    <%- include('common/footer'); -%>
